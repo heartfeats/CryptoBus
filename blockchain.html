@@ -3,28 +3,46 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/blockchain-styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/blockchain.js"></script>
   <meta charset="utf-8">
   <title>CryptoBus</title>
 </head>
+<style media="screen">
+  body {
+    background-image: url(img/background.png);
+  }
+</style>
+
 <body>
   <div class="container">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="menubtn">Navigation</button>
+      <div id="myMenu" class="menu-content">
+        <a href="homepage.html">Homepage</a>
+        <a href="blockchain.html">Blockchain</a>
+        <a href="bitcoin.html">Bitcoin</a>
+      </div>
+    </div>
+    <br>
+    <br>
     <div class="jumbotron">
-      <h1>Blockchain</h1>
-      <h3>Internet 2.0</h3>
+      <h1>The CryptoBus</h1>
+      <h3>Blockchains - The Internet 2.0</h3>
     </div>
     <!-- Section 1: What is Blockchain? -->
-    <div class="well" id="section1">
-      <h2>What is Blockchain?</h2>
-      <p>Here is an analogy, imagine a Google Spreadsheet that is public and shared among all users who have internet. <br> On this spreadsheet users can:</p>
-      <ul>
-        <li>View all the information at any given point of time</li>
-        <li>View changes made on the spreadsheet by other users and who made those changes</li>
-        <li>Make changes to the spreadsheet themselves using their account</li>
-      </ul>
-      <p>In the above example, the Google Spreadsheet acts as medium for information sharing and can loosely be termed a <strong>"Distributed Ledger"</strong>. That is in essence what <strong>Blockchain</strong> is actually.<p>
+    <div id="section1Box">
+      <div id="section1">
+        <h2>What is Blockchain?</h2>
+        <p>Here is an analogy, imagine a Google Spreadsheet that is public and shared among all users who have internet. <br> On this spreadsheet users can:</p>
+        <ul>
+          <li>View all the information at any given point of time</li>
+          <li>View changes made on the spreadsheet by other users and who made those changes</li>
+          <li>Make changes to the spreadsheet themselves using their account</li>
+        </ul>
+        <p>In the above example, the Google Spreadsheet acts as medium for information sharing and can loosely be termed a <strong>"Distributed Ledger"</strong>. That is in essence what <strong>Blockchain</strong> is actually.<p>
         <br>
         The main difference between Blockchain and the shared spreadsheet is that people can make changes of previous data on the spreadsheet while on the blockchain, they can't.
         <br>
@@ -37,33 +55,39 @@
         <p>On the blockchain, the data generated on the blockchain ledger is timestamped and packaged into one unit called a block. Every block is linked to the previous blocks by a method called a "cryptographic hash". That's what makes the blockchain's history irreversible and tamperproof. The cryptographic hash is the <em>"secret ingredient"</em> that secures the spreadsheet-like document called the blockchain.<p>
 
         </p>Another simple analogy that developer's would understand that could be drawn about block within the blockchain is the <em>"commit"</em> function. A block linked to the blockchain is like a <em>Commit</em> made by a developer onto tßhe main project. The <em>Commit</em> made shows the changes made to the project and contains information of the developer's activity. The difference is that Commits can be amended while the blockchain can't. Therefore, the blocks in the blockchain could be loosely considered an <strong><em>"Irreversible Commit"</em></strong>.<p>
-        </div>
+      </div>
+    </div>
+    <br>
         <!-- Section 2: How does Blockchain work? -->
-        <div class="well modal-" id="section2">
-          <h2>How does Blockchain Work?</h2>
-          <h3>Under the Hood</h3>
-          <p>In the above section, we have loosely drawn similarities between the blockchain and google sheets, but really the blockchain is a category of its own. In attempt to understand how the blockchain works, let us understand how the blockchain ecosystem works in an example. The diagram below created by <a href="https://blockgeeks.com/guides/what-is-blockchain-technology/" target="_blank">Blockgeeks</a> is very helpful in helping us achieve just that.</p>
-          <br>
-          <div style = "text-align:center">
-            <img src="img/Chart_blockchain.png" alt="Blockchain Diagram" style="max-width:97%">
+        <div id="section2Box">
+          <div class="modal-" id="section2">
+            <h2>How does Blockchain Work?</h2>
+            <h3>Under the Hood</h3>
+            <p>In the above section, we have loosely drawn similarities between the blockchain and google sheets, but really the blockchain is a category of its own. In attempt to understand how the blockchain works, let us understand how the blockchain ecosystem works in an example. The diagram below created by <a href="https://blockgeeks.com/guides/what-is-blockchain-technology/" target="_blank">Blockgeeks</a> is very helpful in helping us achieve just that.</p>
+            <br>
+            <div style = "text-align:center">
+              <img src="img/Chart_blockchain.png" alt="Blockchain Diagram" style="max-width:97%">
+            </div>
+            <br>
+            <h3>What's what?</h3>
+            <p>The few major components that form blockchain ecosystem are:</p>
+            <ul>
+              <li><strong>A program/ software <em>(Node Application)</em></strong> - This allows the users to interact with other users on the same blockchain Network. Depending on the functions of the Blockchain, the users could perform different actions. In the case of the Bitcoin Network, users will need to run a <em>Bitcoin Wallet</em> application; in the case of Ethereum, <em>Geth</em> is the Node Application. Back to the Google Sheet Analogy, the Google Sheet Application would be the <em>Node Application.</em> </li> <br>
+              <li><strong>The Distributed Ledger <em>(Shared Ledger)</em></strong> - This is the core component of the blockchain ecosystem and most commonly referred to as the Blockchain. There is <strong>only one</strong> ledger for every ecosystem. All activities will take place on this ledger, in the case of cryptocurrencies like Bitcoin, Ethereum and Litecoin tokens are transacted on the ledger. </li> <br>
+              <li><strong>Consensus Mechanism <em>(Consensus Algorithm)</em></strong> - This is the unique identifier of the ecosystem, it is sort of like the constitution for the ecosystem. The <em>consensus algorithm</em> is implemented as part of the program (Node Application) and is the logic used by all parties to arrive at a consensus. In the case of cryptocurrency, the consensus algorithm would ensure transactions taken place are valid. A few examples of consensus mechanism are <em>Proof-of-Work (for Bitcoin)</em>, <em>Proof-of-Stake (for Ethereum)</em> and <em>Proof-of Importance (for NEM)</em></li><br>
+              <li><strong>Virtual Machine<em></em></strong> - A Virtual Machine acts as an emulator or virtual computer running within the Node Application. A VM is generally required for blockchain ecosystems that perform more complex tasks. <br> <br>Take Ethereum for example, programmers can write programs or "smart contracts" on the Ethereum Virtual Machine. These <strong>Smart Contracts</strong> or <strong>Dapps</strong><em> (Decentralised Apps)</em> could then be uploaded, stored and executed on the Ethereum Blockchain for a token sum. Some examples of applications built on the Ethereum platform are Golem Network Token <em>(Decentralised Supercomputer)</em>, Augur <em>(Decentralised Betting)</em> and Iconomi <em>(Digital Asset Management)</em></li>
+            </ul>
           </div>
-          <br>
-          <h3>What's what?</h3>
-          <p>The few major components that form blockchain ecosystem are:</p>
-          <ul>
-            <li><strong>A program/ software <em>(Node Application)</em></strong> - This allows the users to interact with other users on the same blockchain Network. Depending on the functions of the Blockchain, the users could perform different actions. In the case of the Bitcoin Network, users will need to run a <em>Bitcoin Wallet</em> application; in the case of Ethereum, <em>Geth</em> is the Node Application. Back to the Google Sheet Analogy, the Google Sheet Application would be the <em>Node Application.</em> </li> <br>
-            <li><strong>The Distributed Ledger <em>(Shared Ledger)</em></strong> - This is the core component of the blockchain ecosystem and most commonly referred to as the Blockchain. There is <strong>only one</strong> ledger for every ecosystem. All activities will take place on this ledger, in the case of cryptocurrencies like Bitcoin, Ethereum and Litecoin tokens are transacted on the ledger. </li> <br>
-            <li><strong>Consensus Mechanism <em>(Consensus Algorithm)</em></strong> - This is the unique identifier of the ecosystem, it is sort of like the constitution for the ecosystem. The <em>consensus algorithm</em> is implemented as part of the program (Node Application) and is the logic used by all parties to arrive at a consensus. In the case of cryptocurrency, the consensus algorithm would ensure transactions taken place are valid. A few examples of consensus mechanism are <em>Proof-of-Work (for Bitcoin)</em>, <em>Proof-of-Stake (for Ethereum)</em> and <em>Proof-of Importance (for NEM)</em></li><br>
-            <li><strong>Virtual Machine<em></em></strong> - A Virtual Machine acts as an emulator or virtual computer running within the Node Application. A VM is generally required for blockchain ecosystems that perform more complex tasks. <br> <br>Take Ethereum for example, programmers can write programs or "smart contracts" on the Ethereum Virtual Machine. These <strong>Smart Contracts</strong> or <strong>Dapps</strong><em> (Decentralised Apps)</em> could then be uploaded, stored and executed on the Ethereum Blockchain for a token sum. Some examples of applications built on the Ethereum platform are Golem Network Token <em>(Decentralised Supercomputer)</em>, Augur <em>(Decentralised Betting)</em> and Iconomi <em>(Digital Asset Management)</em></li>
-          </ul>
         </div>
+        <br>
         <!-- Section 3: Use Cases for Blockchain -->
-        <div class="well" id="section3">
-          <h2>Use Cases for the Blockchain</h2>
-          <h3>Cryptocurrency:</h3>
-          <p>Some examples of cryptocurrencies that utilises the blockchain are:</p>
-          <ul>
-            <li><strong>Bitcoin:</strong> Although the work on blockchain technology began in the early 90s before Bitcoin was conceptualised, Bitcoin is the first blockchain product to be widely adopted by the public as a globally accepted transfer of value. <br>
+        <div id="section3Box">
+          <div id="section3">
+            <h2>Use Cases for the Blockchain</h2>
+            <h3>Cryptocurrency:</h3>
+            <p>Some examples of cryptocurrencies that utilises the blockchain are:</p>
+            <ul>
+              <li><strong>Bitcoin:</strong> Although the work on blockchain technology began in the early 90s before Bitcoin was conceptualised, Bitcoin is the first blockchain product to be widely adopted by the public as a globally accepted transfer of value. <br>
               <br>Bitcoin is often used synonymously with Blockchain and in laymen terms understood as "Digital Gold". However, Bitcoin and Blockchain are really two different things, just like how google and the internet are different things- blockchain is the technology that powers Bitcoin while bitcoin is a product built using blockchain technology.</li><br>
               <li><strong>Ethereum:</strong> Considered the "Queen" of cryptocurrencies, Ethereum (currency: Ether) is the second most valuable cryptocurrency and can perform certain functions Bitcoin can't. Ethereum allows users to upload programs and applications to the Ethereum Global Network, these applications are called "Decentralised Applications" because of the fact that no single party controls all the information.</li><br>
               <li><strong>Siacoin:</strong> Siacoin was developed by researchers from MIT as an cloud storage alternative solution. Users can use Siacoin to buy cheap cloud storage space. The nature of Siacoin's storage system differs from that of other cloud storage solutions like Google Drive or Dropbox. For Siacoin, users information are stored privately in decentralised computers on the network while instead of centralised data centers. This reduced the risk of hacking and the cost significantly.</li>
@@ -75,21 +99,25 @@
             <h3>Distruption to Existing industries:</h3>
             <p>Just like how Uber and Airbnb distrupted the transportation space and hotelier Industries respectively, Blockchain had the capacity to distrupt many industries such as Insurance, Banking and Finance, Logistics, Cloud Storage etc. In the coming years we will see new industries being born and others fade away.</p>
           </div>
+        </div>
+        <br>
           <!-- Section 4: Why would we use/ Trust it? -->
-          <div class="well" id="section4">
-            <h2>How can I trust Blockchain?</h2>
-            <blockquote>
-              If it ain't broken, why fix it?
-            </blockquote>
-            <p>That might be the main issue people struggle with when choosing or not to endorse or delve into blockchain-based products. That would've been what people might have said about email when the postal industry was still running strong.</p><br>
-            <p>Truth is: <strong>The Current System is Pretty Broken.</strong> Take global transaction banking for instance, the time taken to transfer someone money from one country to another takes a one or more days and this is because there are multiple banks involved in one transaction and banks work only during the day. Worse of all, the fees charged are exorbitant and will only increase inder the current infrastructure. In this instance, Blockchain could solve the problem with time and fees. A company that is trying to solve it is Ripple (XRP).</p>
-            <p>For users concerned with the reliability of the technology, it has been tried and tested and proved unhackable thanks to cryptography that is "uncrackable". The 8 years since Bitcoin's inception has seen it experience multiple hacks and attacks from various angles- technologically, politically and socially- all of which didn't succeed in killing it.</p>
-            <blockquote>
-              What doesn't kill you makes you stronger.
-            </blockquote>
-            <h4>Since Bitcoin, the community matured and expanded exponentially to more use cases for blockchain and it doesn't seem to be stopping. It would be exciting to see what new things can be done using this revolutionary technology.</h4>
+          <div id="section4Box">
+            <div id="section4">
+              <h2>How can I trust Blockchain?</h2>
+              <blockquote>
+                If it ain't broken, why fix it?
+              </blockquote>
+              <p>That might be the main issue people struggle with when choosing or not to endorse or delve into blockchain-based products. That would've been what people might have said about email when the postal industry was still running strong.</p><br>
+              <p>Truth is: <strong>The Current System is Pretty Broken.</strong> Take global transaction banking for instance, the time taken to transfer someone money from one country to another takes a one or more days and this is because there are multiple banks involved in one transaction and banks work only during the day. Worse of all, the fees charged are exorbitant and will only increase inder the current infrastructure. In this instance, Blockchain could solve the problem with time and fees. A company that is trying to solve it is Ripple (XRP).</p>
+              <p>For users concerned with the reliability of the technology, it has been tried and tested and proved unhackable thanks to cryptography that is "uncrackable". The 8 years since Bitcoin's inception has seen it experience multiple hacks and attacks from various angles- technologically, politically and socially- all of which didn't succeed in killing it.</p>
+              <blockquote>
+                What doesn't kill you makes you stronger.
+              </blockquote>
+              <h4>Since Bitcoin, the community matured and expanded exponentially to more use cases for blockchain and it doesn't seem to be stopping. It would be exciting to see what new things can be done using this revolutionary technology.</h4>
+            </div>
           </div>
-
+          <br>
           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="takeQuiz">Take a Quiz</button><br>
 
           <!-- Modal -->
