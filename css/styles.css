@@ -2,48 +2,6 @@
   border: 2px solid #777777;
 }
 
-.sidebar h4 {
-  text-align: center;
-  color: white;
-  text-shadow: 0.04cm 0.04cm 0.04cm black;
-}
-
-.sidebar{
-  position:absolute;
-  left:0;
-  width:370px;
-  height:290px;
-  background-color: #BABABA;
-  padding: 20px;
-  padding-top: 53px;
-  text-align:left;
-  margin-left: 18px;
-  border: 2px solid #777777;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-.sidebar2 {
-  position:absolute;
-  left:0;
-  width:370px;
-  height:300px;
-  background-color: #BABABA;
-  padding: 20px;
-  padding-top: 5px;
-  text-align:left;
-  border: 2px solid #777777;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  margin-left: 18px;
-}
-
-.sidebar2 h4 {
-  text-align: center;
-  color: white;
-  text-shadow: 0.04cm 0.04cm 0.04cm black;
-}
-
 .blockchainBox {
   font-family: "Times New Roman", Times, serif;
   background-color: #BABABA;
@@ -53,10 +11,10 @@
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 20px;
 }
 
 .blockchainBox h1 {
+  text-align: center;
   font-size: 60px;
 }
 
@@ -65,7 +23,7 @@
 }
 
 .bitcoinBox {
-  font-family: "Times New Roman", Times, serif;
+
   background-color: #BABABA;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -73,15 +31,23 @@
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 20px;
 }
 
 .bitcoinBox h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
   font-size: 60px;
 }
 
 .bitcoinBox p {
+  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
+}
+
+.bitcoinBox h4 {
+  text-align: center;
+  color: white;
+  text-shadow: 0.04cm 0.04cm 0.04cm black;
 }
 
 /* Dropdown Button */
