@@ -22,3 +22,41 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
+
+.blockchainBox {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #BABABA;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 2px solid #777777;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blockchainBox h1 {
+  font-size: 60px;
+}
+
+.blockchainBox p {
+  font-size: 20px;
+}
+
+.bitcoinBox {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #BABABA;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 2px solid #777777;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bitcoinBox h1 {
+  font-size: 60px;
+}
+
+.bitcoinBox p {
+  font-size: 20px;
+}
