@@ -5,13 +5,56 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/homepage.js"></script>
+
+    </script>
     <meta charset="utf-8">
-    <title>CryptoBus</title>
+    <title>CryptoBus - Home</title>
   </head>
+  <style media="screen">
+    body {
+      background-image: url(img/background.png);
+    }
+  </style>
   <body>
     <div class="container">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="menubtn">Navigation</button>
+        <div id="myMenu" class="menu-content">
+          <a href="homepage.html">Homepage</a>
+          <a href="blockchain.html">Blockchain</a>
+          <a href="bitcoin.html">Bitcoin</a>
+        </div>
+      </div>
+      <br>
+      <br>
       <div class="jumbotron">
         <h1>Welcome to the CryptoBus</h1>
+      </div>
+
+      <div class="container.fluid">
+        <div class="sidebar">
+          <h4>Widgets</h4>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div class="col-md-6"> -->
+          <div class="blockchainBox">
+            <h1><a href="blockchain.html">Blockchain</a></h1>
+            <p>Blockchain is an algorithm and distributed data structure for managing electronic cash without a central administrator among people who know nothing about one another. Originally designed for the crypto-currency Bitcoin, the blockchain architecture was driven by a radical rejection of at (government-guaranteed) money and bank-controlled payments.</p>
+            <footer>- from a <a href="http://www.zdnet.com/article/blockchain-explained-in-plain-english/">zdnet.com article</a></footer>
+          </div>
+        <!-- </div> -->
+      </div>
+      <br>
+      <div class="row">
+        <!-- <div class="col-md-6"> -->
+          <div class="bitcoinBox">
+            <h1><a href="bitcoin.html">Bitcoin</a></h1>
+            <p>Bitcoin uses p2p technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</p>
+            <footer>- from the <a href="https://bitcoin.org/en/">Bitcoin website</a></footer>
+          </div>
+        <!-- </div> -->
       </div>
     </div>
   </body>
