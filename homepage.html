@@ -31,33 +31,47 @@
       <div class="jumbotron">
         <h1>Welcome to the CryptoBus</h1>
       </div>
-      <div class="col-md-4">
-        <div class="container.fluid">
-          <div class="sidebar">
-            <h4>Widgets</h4>
-            <br>
-            <a href='https://www.coingecko.com/en/price_charts/bitcoin/usd?id=bitcoin' target='_blank'><img alt='bitcoin price' src='https://www.coingecko.com/en/widget_component/ticker/bitcoin/usd.jpg'></a>
-          </div>
-        </div>
-      </div>
       <div class="row">
-        <!-- <div class="col-md-6"> -->
-          <div class="blockchainBox">
-            <h1><a href="blockchain.html">Blockchain</a></h1>
-            <p>Blockchain is an algorithm and distributed data structure for managing electronic cash without a central administrator among people who know nothing about one another. Originally designed for the crypto-currency Bitcoin, the blockchain architecture was driven by a radical rejection of at (government-guaranteed) money and bank-controlled payments.</p>
-            <footer>- from a <a href="http://www.zdnet.com/article/blockchain-explained-in-plain-english/">zdnet.com article</a></footer>
-          </div>
-        <!-- </div> -->
+        <div class="blockchainBox">
+          <h1><a href="blockchain.html">Blockchain</a></h1>
+          <p>Blockchain is an algorithm and distributed data structure for managing electronic cash without a central administrator among people who know nothing about one another. Originally designed for the crypto-currency Bitcoin, the blockchain architecture was driven by a radical rejection of at (government-guaranteed) money and bank-controlled payments.</p>
+          <footer>- from a <a href="http://www.zdnet.com/article/blockchain-explained-in-plain-english/">zdnet.com article</a></footer>
+          <br>
+          <h4>How blockchains work:</h4>
+          <img src="img/blockchain.jpg" alt="blockchain">
+        </div>
       </div>
       <br>
       <div class="row">
-        <!-- <div class="col-md-6"> -->
-          <div class="bitcoinBox">
-            <h1><a href="bitcoin.html">Bitcoin</a></h1>
-            <p>Bitcoin uses p2p technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</p>
-            <footer>- from the <a href="https://bitcoin.org/en/">Bitcoin website</a></footer>
-          </div>
-        <!-- </div> -->
+        <div class="bitcoinBox">
+          <h1><a href="bitcoin.html">Bitcoin</a></h1>
+          <p>Bitcoin uses p2p technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</p>
+          <footer>- from the <a href="https://bitcoin.org/en/">Bitcoin website</a></footer>
+          <br>
+          <h4>Current Bitcoin trading price:</h4>
+          <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+          <script type="text/javascript">
+          new TradingView.widget({
+           "width": 1060,
+           "height": 500,
+           "symbol": "COINBASE:BTCUSD",
+           "interval": "D",
+           "timezone": "Etc/UTC",
+           "theme": "Dark",
+           "style": "1",
+           "locale": "en",
+           "toolbar_bg": "#f1f3f6 ",
+           "enable_publishing": false,
+           "allow_symbol_change": true,
+           "hideideas": true,
+           "studies": [
+             "BB@tv-basicstudies",
+             "MACD@tv-basicstudies",
+             "StochasticRSI@tv-basicstudies"
+           ]
+          });
+          </script>
+        </div>
       </div>
     </div>
   </body>
