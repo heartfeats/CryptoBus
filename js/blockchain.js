@@ -46,6 +46,10 @@ $(document).ready(function() {
 //   this.answer = answer;
 // }
 //
+// Question.prototype.eval = function(ans) {
+//   return (ans === this.answer);
+// }
+
 // var q1 = new Question(
 //   "What is a Blockchain?",
 //   ["Bitcoin","A Distributed Ledger","A Decentralised Currency","A Spreadsheet"],
