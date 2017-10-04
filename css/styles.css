@@ -1,11 +1,22 @@
 .jumbotron {
-  /*border: 2px solid #777777;*/
+
+}
+
+.container-fluid {
+  margin-top: 15px;
 }
 
 body {
-  margin-left: 8px;
+  margin-left: 30px;
   margin-right: 8px;
   font-family: 'Anton', sans-serif;
+}
+p, li, h4 {
+  font-family: 'Quicksand', sans-serif;
+}
+p, li {
+  font-size: 20px;
+
 }
 
 .blockchainBox {
@@ -30,7 +41,6 @@ body {
 .blockchainBox h1 {
   font-family: 'Anton', sans-serif;
   text-align: center;
-  font-size: 60px;
 }
 
 .blockchainBox p {
@@ -58,7 +68,7 @@ body {
 .bitcoinBox h1 {
   text-align: center;
   font-family: 'Anton', sans-serif;
-  font-size: 60px;
+  /*font-size: 60px;*/
 }
 
 .bitcoinBox p {
@@ -74,6 +84,36 @@ body {
 
 .bitcoinBox img {
   width:40%;
+}
+
+.ethereumBox {
+  padding-top: 10px;
+  background: rgba(186, 186, 186, 0.4);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  /*border: 2px solid #777777;*/
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ethereumBox h4 {
+  text-align: center;
+  color: white;
+  text-shadow: 0.04cm 0.04cm 0.04cm black;
+}
+
+.ethereumBox h1 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  /*font-size: 60px;*/
+}
+
+.ethereumBox p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
 
 /* Dropdown Button */
@@ -95,7 +135,11 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 60px;
 }
+
 
 /* Dropdown Content (Hidden by Default) */
 .menu-content {
@@ -118,6 +162,17 @@ body {
 /* Change color of dropdown links on hover */
 .menu-content a:hover {background-color: #f1f1f1}
 
+.menubtn {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.menubtn:hover {
+  background-color: grey;
+}
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
@@ -132,9 +187,35 @@ body {
   margin:auto;*/
   max-width:100%;
 }
+
+#widgets img {
+  display: block;
+  margin:auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 100%;
+  max-width:300px;
+}
+
+#ethereumImg img {
+  display: block;
+  margin:auto;
+  max-width:100%;
+}
+
  #sidebar {
-   padding-right: 50px;
-   background: rgba(186, 186, 186, 0.6);
+   /*padding-right: 50px;*/
+   padding-top: 20px;
+   /*margin-right: 15px;
+   margin-left: 15px;*/
+   margin-bottom: 30px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   border-bottom-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+   background: rgba(186, 186, 186, 0.4);
  }
 
  #tradingView {

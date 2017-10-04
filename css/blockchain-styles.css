@@ -3,6 +3,10 @@ label.btn-block {
     position: relative
 }
 
+label {
+  font-family: 'Quicksand', sans-serif;
+}
+
 label .btn-label {
     position: absolute;
     left: 0;
@@ -55,8 +59,14 @@ label.btn:hover {
     -o-transform: scale(1.02)
 }
 
-.btn #takeQuiz {
-  margin-bottom: 60px;
+#quizBtn {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+#takeQuiz {
+  margin-bottom: 30px;
 }
 
 #section1Box, #section2Box, #section3Box, #section4Box {
