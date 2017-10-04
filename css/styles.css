@@ -1,9 +1,5 @@
 .jumbotron {
-
-}
-
-.container-fluid {
-  margin-top: 15px;
+  background-color: #c5d2ea;
 }
 
 body {
@@ -137,7 +133,7 @@ p, li {
     display: inline-block;
     float: right;
     margin-right: 20px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 
@@ -197,6 +193,12 @@ p, li {
   border-bottom-left-radius: 15px;
   width: 100%;
   max-width:300px;
+}
+
+.ethereumBox img {
+  display: block;
+  margin:auto;
+  max-width:100%;
 }
 
 #ethereumImg img {

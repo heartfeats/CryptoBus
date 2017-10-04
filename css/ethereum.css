@@ -1,9 +1,0 @@
-#section1Box, #section2Box, #section3Box {
-  border: 2px solid #777777;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  background-color: #BABABA;
-}
