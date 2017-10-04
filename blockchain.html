@@ -8,7 +8,7 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/blockchain.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Anton|Asap|Quicksand" rel="stylesheet">
   <meta charset="utf-8">
   <title>CryptoBus</title>
 </head>
@@ -35,6 +35,9 @@
       <h1>The CryptoBus</h1>
       <h3>Blockchains - The Internet 2.0</h3>
     </div>
+    <div id="quizBtn">
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="takeQuiz">Take a Quiz</button><br>
+    </div>
     <!-- Section 1: What is Blockchain? -->
     <div id="section1Box">
       <div id="section1">
@@ -57,7 +60,7 @@
         <br>
         <p>On the blockchain, the data generated on the blockchain ledger is timestamped and packaged into one unit called a block. Every block is linked to the previous blocks by a method called a "cryptographic hash". That's what makes the blockchain's history irreversible and tamperproof. The cryptographic hash is the <em>"secret ingredient"</em> that secures the spreadsheet-like document called the blockchain.<p>
 
-        </p>Another simple analogy that developer's would understand that could be drawn about block within the blockchain is the <em>"commit"</em> function. A block linked to the blockchain is like a <em>Commit</em> made by a developer onto tßhe main project. The <em>Commit</em> made shows the changes made to the project and contains information of the developer's activity. The difference is that Commits can be amended while the blockchain can't. Therefore, the blocks in the blockchain could be loosely considered an <strong><em>"Irreversible Commit"</em></strong>.<p>
+        <p>Another simple analogy that developer's would understand that could be drawn about block within the blockchain is the <em>"commit"</em> function. A block linked to the blockchain is like a <em>Commit</em> made by a developer onto tßhe main project. The <em>Commit</em> made shows the changes made to the project and contains information of the developer's activity. The difference is that Commits can be amended while the blockchain can't. Therefore, the blocks in the blockchain could be loosely considered an <strong><em>"Irreversible Commit"</em></strong>.</p>
       </div>
     </div>
     <br>
@@ -121,7 +124,6 @@
             </div>
           </div>
           <br>
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="takeQuiz">Take a Quiz</button><br>
 
           <!-- Modal -->
           <div id="myModal" class="modal fade" role="dialog">
@@ -215,6 +217,7 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button><br>
               </div>
             </div>
+          </div>
           </div>
         </body>
         </html>
