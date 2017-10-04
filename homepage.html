@@ -26,24 +26,22 @@ body {
         <a href="ethereum.html">Ethereum</a>
       </div>
     </div>
-    <br>
-    <br>
     <div class="jumbotron">
       <h1>Welcome to the CryptoBus</h1>
     </div>
     <div class="row">
-      <div id="sidebar">
-        <div class="col-md-2" style="height:100%">
-          <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
-          <div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="USD" ></div>
-          <br>
-          <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
-          <br>
-          <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="ripple" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
-          <br>
-          <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="bitcoin-cash" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
-          <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="litecoin" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
-        </div>
+        <div class="col-md-2" id="sidebar"style="height:100%">
+          <div id="widgets">
+            <a href="https://www.coingecko.com/en/price_charts/bitcoin/usd" target="_blank"><img alt="bitcoin price" src="https://www.coingecko.com/en/widget_component/ticker/bitcoin/usd.jpg"></a><br>
+            <a href="https://www.coingecko.com/en/price_charts/ethereum/usd" target="_blank"><img alt="ethereum price" src="https://www.coingecko.com/en/widget_component/ticker/ethereum/usd.jpg"></a><br>
+            <a href="https://www.coingecko.com/en/price_charts/ripple/usd" target="_blank"><img alt="ripple price" src="https://www.coingecko.com/en/widget_component/ticker/ripple/usd.jpg"></a><br>
+            <a href="https://www.coingecko.com/en/price_charts/bitcoin-cash/usd" target="_blank"><img alt="bitcoin-cash price" src="https://www.coingecko.com/en/widget_component/ticker/bitcoin-cash/usd.jpg"></a><br>
+            <a href="https://www.coingecko.com/en/price_charts/litecoin/usd" target="_blank"><img alt="litecoin price" src="https://www.coingecko.com/en/widget_component/ticker/litecoin/usd.jpg"></a><br>
+            <a href="https://www.coingecko.com/en/price_charts/dash/usd" target="_blank"><img alt="dash price" src="https://www.coingecko.com/en/widget_component/ticker/dash/usd.jpg"></a><br>
+            <a href="https://www.coingecko.com/en/price_charts/zcash/usd" target="_blank"><img alt="zcash price" src="https://www.coingecko.com/en/widget_component/ticker/zcash/usd.jpg"></a><br>
+            <a href="https://www.coingecko.com/en/price_charts/monero/usd" target="_blank"><img alt="monero price" src="https://www.coingecko.com/en/widget_component/ticker/monero/usd.jpg"></a><br>
+
+          </div>
       </div>
     <div class="col-md-3">
       <div class="blockchainBox">
@@ -58,7 +56,7 @@ body {
       </div>
       <br>
     </div>
-      <div class="col-md-5">
+      <div class="col-md-4">
         <div class="bitcoinBox">
           <h1><a href="bitcoin.html">Bitcoin</a></h1>
           <p>Bitcoin uses p2p technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</p>
@@ -91,6 +89,17 @@ body {
             <!-- TradingView Widget END -->
           </div>
         </div>
+      </div>
+      <div class="col-md-3">
+        <div class="ethereumBox">
+          <h1><a href="ethereum.html">Ethereum</a></h1>
+          <p>Ethereum is a blockchain enabled product that is designed to store data and information. It spots a Turing-complete programming language on its Virtual Machine <em>(learn more about Virtual Machines <a href="blockchain.html">here</a>).</em> <br> On the Ethereum Blockchain, users can upload Smart contracts/ applications to be stored and excecuted in a secure manner. This opens up a whole new world for businesses and programs to be run on the blockchain.</p>
+          <br>
+          <div id="ethereumImg">
+            <img src="img/ethereumLogo.png" alt="ethereum">
+          </div>
+        </div>
+        <br>
       </div>
   </div>
 </div>
