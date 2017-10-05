@@ -23,6 +23,11 @@ Open a browser compatible with HTML, CSS, jQuery, and Javascript.
 
 * [Atom](http://www.atom.io) - The web framework used
 * Terminal
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used to contruct this webpage
+* [CSS3](http://html.com/css/) - Used to style
+* [Javascript] (https://www.javascript.com/) - Used for user interactives
+* [Jquery](https://jquery.com/) - Javascript library used
+* [Bootstrap](http://getbootstrap.com/) - CSS library used
 
 
 ## Authors
