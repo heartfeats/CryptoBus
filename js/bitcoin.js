@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     var A = (principal* Math.pow((1 + (r/(100))), (time)));
 
-    result.innerHTML = "Potential value in " + time + " years: $" + A.toFixed(2);
+    result.innerHTML = "Potential value in " + time + " years: <br> <strong>$" + A.toFixed(2) +"</strong>";
 
   });
 });
