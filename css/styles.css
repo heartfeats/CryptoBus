@@ -5,19 +5,39 @@
   /*background-position: left;*/
   background-size: contain;
   background-clip: padding-box;
-  height: 200px;
-  padding-top:18px;
+  padding-top: 18px;
 }
 
-.jumbotron h1 {
-  text-align: right;
-  padding-right: 10px;
+.jumbotron h2 {
+  color: #ededed;
+  text-shadow: 2px 2px 2px black;
 }
 
-#ethereumHomepage h2 {
-  float: right;
-  padding-right: 100px;
+#ethereumHeader h1 {
+  text-align: center;
+  margin-left: 20%;
 }
+
+#ethereumHeader h2 {
+  text-align: center;
+  margin-left: 17%;
+}
+
+#bitcoinHeader h2 {
+  text-align: center;
+  margin-left:17%;
+}
+
+#homepageHeader h2 {
+  text-align: center;
+  margin-left:17%;
+}
+
+#homepageHeader h1 {
+  text-align: center;
+  margin-left:20%;
+}
+
 
 body {
   margin-left: 30px;
