@@ -1,5 +1,22 @@
 .jumbotron {
   background-color: #c5d2ea;
+  background-image: url("../img/cryptobus2b.jpg");
+  background-repeat: no-repeat;
+  /*background-position: left;*/
+  background-size: contain;
+  background-clip: padding-box;
+  height: 200px;
+  padding-top:18px;
+}
+
+.jumbotron h1 {
+  text-align: right;
+  padding-right: 10px;
+}
+
+#ethereumHomepage h2 {
+  float: right;
+  padding-right: 100px;
 }
 
 body {
@@ -7,9 +24,11 @@ body {
   margin-right: 8px;
   font-family: 'Anton', sans-serif;
 }
+
 p, li, h4 {
   font-family: 'Quicksand', sans-serif;
 }
+
 p, li {
   font-size: 20px;
 
@@ -114,17 +133,30 @@ p, li {
 
 /* Dropdown Button */
 .menubtn {
-    background-color: #005FB9;
-    color: white;
-    padding: 16px;
+    background-color: #c5d2ea;
+    border-color: #005FB9;
+    border-width: thin;
+    color: #005FB9;
+    padding: 5px;
     font-size: 16px;
-    border: none;
+    /*border: none;*/
     cursor: pointer;
+    height: 40px;
+    width: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 /* Dropdown button on hover & focus */
 .menubtn:hover, .menubtn:focus {
-    background-color: #BABABA;
+    background-color: #005FB9;
+    color: white;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -132,8 +164,8 @@ p, li {
     position: relative;
     display: inline-block;
     float: right;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 5px;
+    margin-top: 25px;
 }
 
 
@@ -157,17 +189,6 @@ p, li {
 
 /* Change color of dropdown links on hover */
 .menu-content a:hover {background-color: #f1f1f1}
-
-.menubtn {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.menubtn:hover {
-  background-color: grey;
-}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
